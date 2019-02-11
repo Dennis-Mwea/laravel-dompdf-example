@@ -40,6 +40,6 @@ class UserDetailsController extends Controller
 
         $pdf = PDF::loadView('pdf', compact('user'));
 
-        return $pdf->stream();
+        return $pdf->download();
     }
 }
